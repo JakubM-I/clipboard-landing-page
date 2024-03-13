@@ -1,5 +1,6 @@
 @use "../abstracts/variables" as *;
 @use "../abstracts/mixins" as *;
+@use "../components/containers" as *;
 
 .header{
     background-image: url(../images/bg-header-desktop.png);
@@ -15,11 +16,11 @@
     }
 
     &__body{
-        width: 100%;
-        max-width: 690px;
-        margin-inline: auto;
-
-        text-align: center;
+        // width: 100%;
+        // max-width: 690px;
+        // margin-inline: auto;
+        // text-align: center;
+        @extend %middle-container;
     }
 
     &__logo{

@@ -33,6 +33,13 @@ body {
   background: hsl(233, 100%, 69%);
 }
 
+.section-bottom__body, .header__body {
+  width: 100%;
+  max-width: 690px;
+  margin-inline: auto;
+  text-align: center;
+}
+
 .header {
   background-image: url(../images/bg-header-desktop.png);
   background-position: center;
@@ -46,12 +53,6 @@ body {
   .header {
     background-image: url(../images/bg-header-mobile.png);
   }
-}
-.header__body {
-  width: 100%;
-  max-width: 690px;
-  margin-inline: auto;
-  text-align: center;
 }
 .header__logo {
   width: 100%;
@@ -73,6 +74,19 @@ body {
 }
 @media screen and (max-width: 499px) {
   .header__buttons {
+    flex-direction: column;
+    gap: 25px;
+  }
+}
+
+.section-bottom__buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+@media screen and (max-width: 499px) {
+  .section-bottom__buttons {
     flex-direction: column;
     gap: 25px;
   }

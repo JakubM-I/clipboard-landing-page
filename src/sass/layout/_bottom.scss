@@ -1,0 +1,20 @@
+@use "../components/containers" as *;
+@use "../abstracts/mixins" as *;
+
+.section-bottom{
+    &__body{
+        @extend %middle-container;
+    }
+
+    &__buttons{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+
+        @include mobileBreakpoint{
+            flex-direction: column;
+            gap: 25px;
+        }
+    }
+}
