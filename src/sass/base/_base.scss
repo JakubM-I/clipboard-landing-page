@@ -1,4 +1,8 @@
+@use "../abstracts/variables" as *;
+
 //Main styling
-#clipboard{
+body{
     font-family: "Bai Jamjuree", sans-serif;
+    font-size: $fontSize;
+    color: $grayishBlue;
 }
