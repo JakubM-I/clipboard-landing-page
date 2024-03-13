@@ -10,8 +10,31 @@ body {
   margin-inline: auto;
 }
 
+.main-title {
+  color: hsl(210, 10%, 33%);
+  font-weight: 600;
+  margin: 0 0 32px;
+}
+
+.button {
+  appearance: none;
+  border: none;
+  border-radius: 25px;
+  padding: 17px 40px;
+  font-family: "Bai Jamjuree", sans-serif;
+  font-size: 18px;
+  color: hsl(0, 0%, 100%);
+  cursor: pointer;
+}
+.button--ios {
+  background: hsl(171, 66%, 44%);
+}
+.button--mac {
+  background: hsl(233, 100%, 69%);
+}
+
 .header {
-  background: url(../images/bg-header-desktop.png);
+  background-image: url(../images/bg-header-desktop.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -19,9 +42,14 @@ body {
   padding-block-start: 130px;
   margin-block-end: 130px;
 }
+@media screen and (max-width: 499px) {
+  .header {
+    background-image: url(../images/bg-header-mobile.png);
+  }
+}
 .header__body {
   width: 100%;
-  max-width: 700px;
+  max-width: 690px;
   margin-inline: auto;
   text-align: center;
 }
@@ -29,8 +57,23 @@ body {
   width: 100%;
   max-width: 125px;
   height: auto;
+  margin-block-end: 74px;
 }
-.header__title {
-  color: hsl(210, 10%, 33%);
-  font-weight: 600;
+.header__content {
+  margin-block-end: 50px;
+}
+.header__content p {
+  margin: 0;
+}
+.header__buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+@media screen and (max-width: 499px) {
+  .header__buttons {
+    flex-direction: column;
+    gap: 25px;
+  }
 }

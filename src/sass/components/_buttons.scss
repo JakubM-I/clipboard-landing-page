@@ -1,0 +1,20 @@
+@use "../abstracts/variables" as *;
+
+.button{
+    appearance: none;
+    border: none;
+    border-radius: 25px;
+    padding: 17px 40px;
+    font-family: $fontFamily;
+    font-size: $fontSize;
+    color: $white;
+    cursor: pointer;
+
+    &--ios{
+        background: $strongCyan;
+    }
+
+    &--mac{
+        background: $lightBlue;
+    }
+}

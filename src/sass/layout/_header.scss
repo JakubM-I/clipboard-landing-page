@@ -1,7 +1,8 @@
 @use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
 
 .header{
-    background: url(../images/bg-header-desktop.png);
+    background-image: url(../images/bg-header-desktop.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -9,10 +10,15 @@
     padding-block-start: 130px;
     margin-block-end: 130px;
     
+    @include mobileBreakpoint {
+        background-image: url(../images/bg-header-mobile.png);
+    }
+
     &__body{
         width: 100%;
-        max-width: 700px;
+        max-width: 690px;
         margin-inline: auto;
+
         text-align: center;
     }
 
@@ -20,10 +26,26 @@
         width: 100%;
         max-width: 125px;
         height: auto;
+        margin-block-end: 74px;
     }
 
-    &__title{
-        color: $darkGrayishBlue;
-        font-weight: 600;
+    &__content{
+        margin-block-end: 50px;
+
+        p{
+            margin: 0;
+        }
+    }
+
+    &__buttons{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+
+        @include mobileBreakpoint{
+            flex-direction: column;
+            gap: 25px;
+        }
     }
 }
