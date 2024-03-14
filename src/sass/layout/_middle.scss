@@ -1,0 +1,17 @@
+@use "../components/containers" as *;
+@use "../components/headings" as *;
+@use "../abstracts/mixins" as *;
+
+.section-middle{
+    &__body{
+        @extend %middle-container;
+    }
+
+    &__title{
+        @extend %section-title;
+    }
+
+    &__content{
+        @extend %content-container;
+    }
+}

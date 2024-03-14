@@ -10,7 +10,7 @@ body {
   margin-inline: auto;
 }
 
-.section-bottom__title, .section-top__title, .header__title {
+.section-bottom__title, .section-middle__title, .section-top__title, .header__title {
   color: hsl(210, 10%, 33%);
   font-weight: 600;
   margin: 0 0 32px;
@@ -33,17 +33,17 @@ body {
   background: hsl(233, 100%, 69%);
 }
 
-.section-bottom__body, .section-top__body, .header__body {
+.section-bottom__body, .section-middle__body, .section-top__body, .header__body {
   width: 100%;
   max-width: 690px;
   margin-inline: auto;
   text-align: center;
 }
 
-.section-bottom__content, .section-top__content, .header__content {
+.section-bottom__content, .section-middle__content, .section-top__content, .header__content {
   margin-block-end: 50px;
 }
-.section-bottom__content p, .section-top__content p, .header__content p {
+.section-bottom__content p, .section-middle__content p, .section-top__content p, .header__content p {
   margin: 0;
 }
 
