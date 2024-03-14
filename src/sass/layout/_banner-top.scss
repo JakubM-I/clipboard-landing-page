@@ -1,0 +1,17 @@
+
+
+.banner-top{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: clip;
+
+    &__img{
+        // flex-basis: 50%;
+        // flex-grow: 0;
+        // flex-shrink: 0;
+        transform: translateX(-35px);
+        width: 100%;
+        max-width: 752px;
+    }
+}

@@ -80,3 +80,14 @@ body {
   height: auto;
   margin-block-end: 74px;
 }
+.banner-top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: clip;
+}
+.banner-top__img {
+  transform: translateX(-35px);
+  width: 100%;
+  max-width: 752px;
+}
