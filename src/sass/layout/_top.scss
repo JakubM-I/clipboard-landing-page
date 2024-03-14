@@ -2,6 +2,8 @@
 @use "../components/headings" as *;
 
 .section-top{
+    margin-block-end: 75px;
+
     &__body{
         @extend %middle-container;
     }

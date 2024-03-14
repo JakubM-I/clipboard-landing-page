@@ -1,10 +1,17 @@
-
+@use "../components/headings" as *;
+@use "../components/containers" as *;
 
 .banner-top{
     display: flex;
     justify-content: center;
     align-items: center;
     overflow: clip;
+    margin-block-end: 150px;
+
+    &__imgWrapper{
+        flex-basis: 50%;
+        flex-grow: 0;
+    }
 
     &__img{
         // flex-basis: 50%;
@@ -13,5 +20,31 @@
         transform: translateX(-35px);
         width: 100%;
         max-width: 752px;
+    }
+
+    &__body{
+        flex-basis: 50%;
+        // flex-shrink: 0;
+        display: flex;
+        // justify-content: center;
+        align-items: center;
+        padding-inline-start: 100px;
+    }
+
+    &__title{
+        @extend %section-title;
+        margin: 0 0 10px;
+    }
+
+    &__content{
+        @extend %banner-container
+    }
+
+    &__txt{
+        margin: 0 0 60px;
+
+        &:last-child{
+            margin: 0;
+        }
     }
 }
