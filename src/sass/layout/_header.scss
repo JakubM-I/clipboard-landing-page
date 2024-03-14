@@ -1,6 +1,7 @@
 @use "../abstracts/variables" as *;
 @use "../abstracts/mixins" as *;
 @use "../components/containers" as *;
+@use "../components/headings" as *;
 
 .header{
     background-image: url(../images/bg-header-desktop.png);
@@ -30,23 +31,28 @@
         margin-block-end: 74px;
     }
 
+    &__title{
+        @extend %section-title;
+    }
+
     &__content{
-        margin-block-end: 50px;
+        @extend %content-container;
+        // margin-block-end: 50px;
 
-        p{
-            margin: 0;
-        }
+        // p{
+        //     margin: 0;
+        // }
     }
 
-    &__buttons{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 15px;
+    // &__buttons{
+    //     display: flex;
+    //     justify-content: center;
+    //     align-items: center;
+    //     gap: 15px;
 
-        @include mobileBreakpoint{
-            flex-direction: column;
-            gap: 25px;
-        }
-    }
+    //     @include mobileBreakpoint{
+    //         flex-direction: column;
+    //         gap: 25px;
+    //     }
+    // }
 }

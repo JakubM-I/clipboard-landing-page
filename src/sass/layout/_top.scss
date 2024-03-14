@@ -1,14 +1,13 @@
 @use "../components/containers" as *;
 @use "../components/headings" as *;
-@use "../abstracts/mixins" as *;
 
-.section-bottom{
+.section-top{
     &__body{
         @extend %middle-container;
     }
 
     &__title{
-        @extend %section-title;
+        @extend %section-title
     }
 
     &__content{

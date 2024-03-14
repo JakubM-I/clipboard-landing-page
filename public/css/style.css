@@ -10,7 +10,7 @@ body {
   margin-inline: auto;
 }
 
-.main-title {
+.section-bottom__title, .section-top__title, .header__title {
   color: hsl(210, 10%, 33%);
   font-weight: 600;
   margin: 0 0 32px;
@@ -33,11 +33,31 @@ body {
   background: hsl(233, 100%, 69%);
 }
 
-.section-bottom__body, .header__body {
+.section-bottom__body, .section-top__body, .header__body {
   width: 100%;
   max-width: 690px;
   margin-inline: auto;
   text-align: center;
+}
+
+.section-bottom__content, .section-top__content, .header__content {
+  margin-block-end: 50px;
+}
+.section-bottom__content p, .section-top__content p, .header__content p {
+  margin: 0;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+@media screen and (max-width: 499px) {
+  .button-container {
+    flex-direction: column;
+    gap: 25px;
+  }
 }
 
 .header {
@@ -59,35 +79,4 @@ body {
   max-width: 125px;
   height: auto;
   margin-block-end: 74px;
-}
-.header__content {
-  margin-block-end: 50px;
-}
-.header__content p {
-  margin: 0;
-}
-.header__buttons {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 15px;
-}
-@media screen and (max-width: 499px) {
-  .header__buttons {
-    flex-direction: column;
-    gap: 25px;
-  }
-}
-
-.section-bottom__buttons {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 15px;
-}
-@media screen and (max-width: 499px) {
-  .section-bottom__buttons {
-    flex-direction: column;
-    gap: 25px;
-  }
 }
