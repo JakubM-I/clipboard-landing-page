@@ -9,7 +9,7 @@
     }
 
     &__title{
-        @extend %section-title
+        @extend %section-title;
     }
 
     &__content{
