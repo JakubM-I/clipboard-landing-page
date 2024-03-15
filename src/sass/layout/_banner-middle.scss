@@ -1,0 +1,10 @@
+.banner-middle{
+    width: 100%;
+
+    &__img{
+        display: block;
+        width: 100%;
+        max-width: 905px;
+        margin-inline: auto;
+    }
+}

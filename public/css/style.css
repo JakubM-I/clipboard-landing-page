@@ -453,3 +453,13 @@ body {
 .banner-top__txt:last-child {
   margin: 0;
 }
+
+.banner-middle {
+  width: 100%;
+}
+.banner-middle__img {
+  display: block;
+  width: 100%;
+  max-width: 905px;
+  margin-inline: auto;
+}
