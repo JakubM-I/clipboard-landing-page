@@ -386,6 +386,12 @@ body {
   max-width: 380px;
 }
 
+.section-logos, .section-grid {
+  width: 100%;
+  max-width: 1110px;
+  margin-inline: auto;
+}
+
 .button-container {
   display: flex;
   justify-content: center;
@@ -472,13 +478,11 @@ body {
 }
 
 .section-grid {
-  width: 100%;
-  max-width: 1110px;
-  margin-inline: auto;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 25px;
   justify-content: center;
+  margin-block-end: 150px;
 }
 .section-grid__item {
   display: flex;
@@ -496,4 +500,16 @@ body {
 }
 .section-grid__content {
   font-size: 16px;
+}
+
+.section-logos {
+  margin-block-end: 150px;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.section-bottom__content {
+  margin-block-end: 50px;
 }

@@ -13,5 +13,6 @@
 
     &__content{
         @extend %content-container;
+        margin-block-end: 50px;
     }
 }

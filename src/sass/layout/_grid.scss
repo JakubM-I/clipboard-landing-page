@@ -1,14 +1,13 @@
-@use "../components/" as *;
+@use "../components";
 
 
 .section-grid{
-    width: 100%;
-    max-width: 1110px;
-    margin-inline: auto;
+    @extend %icon-container;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 25px;
     justify-content: center;
+    margin-block-end: 150px;
 
     &__item{
         display: flex;
