@@ -324,7 +324,7 @@ template {
   display: none;
 }
 
-.footer__menuLink {
+.footer__menuLink, .button {
   transition: all 200ms ease-in;
 }
 
@@ -381,9 +381,15 @@ body {
   background: hsl(171, 66%, 44%);
   box-shadow: hsl(160, 64%, 72%) 0px 10px 20px 0px, inset rgba(0, 0, 0, 0.1882352941) 0px -3px 0px 0px;
 }
+.button--ios:hover {
+  background: #5DCCBB;
+}
 .button--mac {
   background: hsl(233, 100%, 69%);
   box-shadow: hsla(0, 0%, 0%, 0.13) 0px 10px 20px 0px, inset rgba(0, 0, 0, 0.1882352941) 0px -3px 0px 0px;
+}
+.button--mac:hover {
+  background: #8896FF;
 }
 
 .section-bottom__body, .section-middle__body, .section-top__body, .header__body {
@@ -550,7 +556,7 @@ body {
 .footer__menuList {
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(min(100%, 10rem), 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 11rem), 1fr));
   gap: 20px;
 }
 .footer__menuLink {
@@ -558,7 +564,7 @@ body {
   color: hsl(210, 10%, 33%);
 }
 .footer__menuLink:hover {
-  color: hsl(171, 52%, 58%);
+  color: #5DCCBB;
 }
 .footer__socialsList {
   gap: 15px;
