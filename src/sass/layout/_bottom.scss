@@ -3,6 +3,8 @@
 @use "../abstracts/mixins" as *;
 
 .section-bottom{
+    margin-block-end: 150px;
+    
     &__body{
         @extend %middle-container;
     }

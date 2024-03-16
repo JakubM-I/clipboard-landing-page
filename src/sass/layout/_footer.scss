@@ -10,9 +10,7 @@
     }
 
     &__logo{
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @extend %centeredFlex;
 
         &>img{
             width: 55px;
@@ -20,29 +18,36 @@
         }
     }
 
-    &__socials{
-        display: flex;
-        justify-content: center;
-        align-items: center;
+    &__menuList{
+        @extend %listReset;
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax((min(100%, 10rem)), 1fr));
+        gap: 20px;
     }
 
-    &__list{
-        list-style: none;
-        display: flex;
-        flex-wrap: nowrap;
-        justify-content: center;
-        align-items: center;
-        gap: 15px;
+    &__menuLink{
+        text-decoration: none;
+        color: $darkGrayishBlue;
+        @extend %transitions;
 
-        &Item{
-
+        &:hover{
+            color: $downy;
         }
+    }
+
+    &__socials{
+        @extend %centeredFlex;
+    }
+
+    &__socialsList{
+        @extend %listReset;
+        @extend %centeredFlex;
+        gap: 15px;
 
         &Img{
             width: 24px;
             height: auto;
         }
     }
-
-
 }

@@ -7,9 +7,30 @@ $darkGrayishBlue:  hsl(210, 10%, 33%);
 $grayishBlue: #9fabb2;
 $white: hsl(0, 0%, 100%);
 $athensGray: #F5F6F8;
+$downy: hsl(171, 52%, 58%);
 
 //Typography
 $fontFamily: "Bai Jamjuree", sans-serif;
 $fontSize: 18px;
 $font400: 400;
 $font600: 600;
+
+//Transitions
+%transitions {
+    transition: all 200ms ease-in;
+}
+
+//List resets
+%listReset{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+//Align elements
+%centeredFlex{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
