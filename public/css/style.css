@@ -362,9 +362,11 @@ body {
 }
 .button--ios {
   background: hsl(171, 66%, 44%);
+  box-shadow: hsl(160, 64%, 72%) 0px 10px 20px 0px, inset rgba(0, 0, 0, 0.1882352941) 0px -3px 0px 0px;
 }
 .button--mac {
   background: hsl(233, 100%, 69%);
+  box-shadow: hsla(0, 0%, 0%, 0.13) 0px 10px 20px 0px, inset rgba(0, 0, 0, 0.1882352941) 0px -3px 0px 0px;
 }
 
 .section-bottom__body, .section-middle__body, .section-top__body, .header__body {

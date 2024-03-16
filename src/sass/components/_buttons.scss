@@ -12,9 +12,13 @@
 
     &--ios{
         background: $strongCyan;
+        box-shadow: hsl(160, 64%, 72%) 0px 10px 20px 0px, inset #00000030 0px -3px 0px 0px;
+        // box-shadow: inset #00000030 0px -3px 0px 0px;
     }
 
     &--mac{
         background: $lightBlue;
+        box-shadow: hsla(0, 0%, 0%, 0.13) 0px 10px 20px 0px, inset #00000030 0px -3px 0px 0px;
+        // box-shadow: inset #00000030 0px -3px 0px 0px;
     }
 }
