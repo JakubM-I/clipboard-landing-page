@@ -335,7 +335,7 @@ html {
 body {
   font-family: "Bai Jamjuree", sans-serif;
   font-size: 18px;
-  color: hsl(201, 11%, 66%);
+  color: #9fabb2;
 }
 
 #clipboard {
@@ -514,4 +514,38 @@ body {
 
 .section-bottom__content {
   margin-block-end: 50px;
+}
+
+.footer__body {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  background: #F5F6F8;
+  padding-block: 39px;
+}
+.footer__logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer__logo > img {
+  width: 55px;
+  height: auto;
+}
+.footer__socials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer__list {
+  list-style: none;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+.footer__listImg {
+  width: 24px;
+  height: auto;
 }

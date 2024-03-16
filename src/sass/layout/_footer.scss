@@ -1,0 +1,48 @@
+@use "../abstracts/variables" as *;
+
+.footer{
+    &__body{
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr;
+        background: $athensGray;
+        padding-block: 39px;
+    }
+
+    &__logo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &>img{
+            width: 55px;
+            height: auto;
+        }
+    }
+
+    &__socials{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__list{
+        list-style: none;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+
+        &Item{
+
+        }
+
+        &Img{
+            width: 24px;
+            height: auto;
+        }
+    }
+
+
+}
