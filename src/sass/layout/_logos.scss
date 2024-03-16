@@ -3,9 +3,14 @@
 .section-logos{
     @extend %icon-container;
     margin-block-end: 150px;
+    padding-inline: 10px;
 
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-between;
-    align-items: center;
+    gap: 10px;
+
+    &__img{
+        width: 100%;
+    }
 }
