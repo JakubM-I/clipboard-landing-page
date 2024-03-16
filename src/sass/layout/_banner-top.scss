@@ -1,5 +1,6 @@
 @use "../components/headings" as *;
 @use "../components/containers" as *;
+@use "../abstracts/mixins" as *;
 
 .banner-top{
     display: flex;
@@ -8,9 +9,18 @@
     overflow: clip;
     margin-block-end: 150px;
 
+    @include mobileBreakpoint("tablet"){
+        flex-direction: column;
+    }
+
     &__imgWrapper{
         flex-basis: 50%;
         flex-grow: 0;
+
+        @include mobileBreakpoint("tablet"){
+            padding-inline: 30px;
+            margin-block-end: 56px;
+        }
     }
 
     &__img{
@@ -20,6 +30,10 @@
         transform: translateX(-35px);
         width: 100%;
         max-width: 752px;
+
+        @include mobileBreakpoint("tablet"){
+            transform: none;
+        }
     }
 
     &__body{
@@ -29,11 +43,21 @@
         // justify-content: center;
         align-items: center;
         padding-inline-start: 100px;
+
+        @include mobileBreakpoint("tablet"){
+            flex-basis: 100%;
+            justify-content: center;
+            padding-inline-start: 0;
+        }
     }
 
     &__title{
         @extend %section-title;
         margin: 0 0 10px;
+
+        @include mobileBreakpoint("tablet"){
+            text-align: center;
+        }
     }
 
     &__content{
@@ -42,6 +66,12 @@
 
     &__txt{
         margin: 0 0 60px;
+        font-size: 16px;
+        @extend %contentLineHeight;
+
+        @include mobileBreakpoint("tablet"){
+            text-align: center;
+        }
 
         &:last-child{
             margin: 0;

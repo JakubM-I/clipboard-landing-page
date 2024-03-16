@@ -9,9 +9,11 @@
 
 %content-container{
     text-align: center;
+    padding-inline: 10px;
 
     p{
         margin: 0;
+        @extend %contentLineHeight;
     }
 }
 
@@ -32,7 +34,7 @@
     align-items: center;
     gap: 15px;
 
-    @include mobileBreakpoint{
+    @include mobileBreakpoint("tablet"){
         flex-direction: column;
         gap: 25px;
     }

@@ -1,6 +1,8 @@
+@use "variables" as *;
+@use "sass:map";
 
-@mixin mobileBreakpoint {
-    @media screen and (max-width: 499px){
+@mixin mobileBreakpoint($device) {
+    @media screen and (max-width: #{map.get($breakepoints, $device)}){
         @content
     }
 }

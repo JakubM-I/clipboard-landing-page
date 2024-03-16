@@ -1,4 +1,5 @@
 @use "../components";
+@use "../abstracts/mixins" as *;
 
 
 .section-grid{
@@ -8,6 +9,13 @@
     gap: 25px;
     justify-content: center;
     margin-block-end: 150px;
+    padding-inline: 10px;
+
+    @include mobileBreakpoint("tablet"){
+        grid-template-columns: 1fr;
+        justify-items: center;
+        // grid-template-columns: min(1fr, 245px);
+    }
 
     &__item{
         display: flex;
@@ -15,6 +23,10 @@
         align-items: center;
         justify-content: flex-start;
         // gap: 15px;
+
+        @include mobileBreakpoint("tablet"){
+            width: min(100%, 245px);
+        }
     }
 
     &__img{

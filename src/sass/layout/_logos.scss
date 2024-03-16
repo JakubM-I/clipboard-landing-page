@@ -1,4 +1,5 @@
 @use "../components";
+@use "../abstracts/mixins" as *;
 
 .section-logos{
     @extend %icon-container;
@@ -12,5 +13,13 @@
 
     &__img{
         width: 100%;
+    }
+
+    @include mobileBreakpoint("tablet"){
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 50px;
+
     }
 }
