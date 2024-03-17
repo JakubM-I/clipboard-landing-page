@@ -5,4 +5,10 @@
     @media screen and (max-width: #{map.get($breakepoints, $device)}){
         @content
     }
+};
+
+@mixin mobileBreakpointUp($device){
+    @media screen and (min-width: calc(#{map.get($breakepoints, $device)} + 1px)){
+        @content
+    }
 }

@@ -24,9 +24,6 @@
     }
 
     &__img{
-        // flex-basis: 50%;
-        // flex-grow: 0;
-        // flex-shrink: 0;
         transform: translateX(-35px);
         width: 100%;
         max-width: 752px;
@@ -38,9 +35,7 @@
 
     &__body{
         flex-basis: 50%;
-        // flex-shrink: 0;
         display: flex;
-        // justify-content: center;
         align-items: center;
         padding-inline-start: 100px;
 

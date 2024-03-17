@@ -9,12 +9,13 @@
     gap: 25px;
     justify-content: center;
     margin-block-end: 150px;
-    padding-inline: 10px;
+    @include mobileBreakpointUp("tablet"){
+        padding-inline: 20px;
+    }
 
     @include mobileBreakpoint("tablet"){
         grid-template-columns: 1fr;
         justify-items: center;
-        // grid-template-columns: min(1fr, 245px);
     }
 
     &__item{
@@ -22,10 +23,9 @@
         flex-direction: column;
         align-items: center;
         justify-content: flex-start;
-        // gap: 15px;
 
         @include mobileBreakpoint("tablet"){
-            width: min(100%, 245px);
+            width: min(100%, 380px);
         }
     }
 

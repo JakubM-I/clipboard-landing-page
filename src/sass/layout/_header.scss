@@ -17,11 +17,8 @@
     }
 
     &__body{
-        // width: 100%;
-        // max-width: 690px;
-        // margin-inline: auto;
-        // text-align: center;
         @extend %middle-container;
+        padding-inline: 20px;
     }
 
     &__logo{
@@ -38,21 +35,5 @@
     &__content{
         @extend %content-container;
         margin-block-end: 50px;
-
-        // p{
-        //     margin: 0;
-        // }
     }
-
-    // &__buttons{
-    //     display: flex;
-    //     justify-content: center;
-    //     align-items: center;
-    //     gap: 15px;
-
-    //     @include mobileBreakpoint{
-    //         flex-direction: column;
-    //         gap: 25px;
-    //     }
-    // }
 }

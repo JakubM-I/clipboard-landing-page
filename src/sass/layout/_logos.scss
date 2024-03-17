@@ -4,12 +4,14 @@
 .section-logos{
     @extend %icon-container;
     margin-block-end: 150px;
-    padding-inline: 10px;
+    @include mobileBreakpointUp("tablet"){
+        padding-inline: 20px;
+    }
 
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-between;
-    gap: 10px;
+    gap: 20px;
 
     &__img{
         width: 100%;

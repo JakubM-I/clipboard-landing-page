@@ -1,5 +1,13 @@
+@use "../abstracts/mixins" as *;
+
 #clipboard{
     width: 100%;
     max-width: 1440px;
     margin-inline: auto;
+}
+
+.clipboard-content{
+    @include mobileBreakpoint("tablet"){
+        padding-inline: 20px;
+    }
 }

@@ -365,6 +365,12 @@ body {
   margin-inline: auto;
 }
 
+@media screen and (max-width: 760px) {
+  .clipboard-content {
+    padding-inline: 20px;
+  }
+}
+
 .section-bottom__title, .section-middle__title, .banner-top__title, .section-top__title, .header__title, .section-grid__title {
   color: hsl(210, 10%, 33%);
   font-weight: 600;
@@ -405,7 +411,6 @@ body {
 
 .section-bottom__content, .section-middle__content, .section-top__content, .header__content, .section-grid__content {
   text-align: center;
-  padding-inline: 10px;
 }
 .section-bottom__content p, .section-middle__content p, .section-top__content p, .header__content p, .section-grid__content p {
   margin: 0;
@@ -448,6 +453,9 @@ body {
   .header {
     background-image: url(../images/bg-header-mobile.png);
   }
+}
+.header__body {
+  padding-inline: 20px;
 }
 .header__logo {
   width: 100%;
@@ -547,7 +555,11 @@ body {
   gap: 25px;
   justify-content: center;
   margin-block-end: 150px;
-  padding-inline: 10px;
+}
+@media screen and (min-width: calc(760px + 1px)) {
+  .section-grid {
+    padding-inline: 20px;
+  }
 }
 @media screen and (max-width: 760px) {
   .section-grid {
@@ -563,7 +575,7 @@ body {
 }
 @media screen and (max-width: 760px) {
   .section-grid__item {
-    width: min(100%, 245px);
+    width: min(100%, 380px);
   }
 }
 .section-grid__img {
@@ -580,11 +592,15 @@ body {
 
 .section-logos {
   margin-block-end: 150px;
-  padding-inline: 10px;
   display: flex;
   flex-wrap: nowrap;
   justify-content: space-between;
-  gap: 10px;
+  gap: 20px;
+}
+@media screen and (min-width: calc(760px + 1px)) {
+  .section-logos {
+    padding-inline: 20px;
+  }
 }
 .section-logos__img {
   width: 100%;
