@@ -16,6 +16,7 @@
     @include mobileBreakpoint("tablet"){
         grid-template-columns: 1fr;
         justify-items: center;
+        gap: 45px;
     }
 
     &__item{
@@ -33,11 +34,20 @@
         width: auto;
         height: 34px;
         margin-block-end: 45px;
+
+        @include mobileBreakpoint("tablet"){
+            margin-block-end: 30px;
+        }
     }
 
     &__title{
         @extend %section-title;
-        margin: 0 0 30px
+        margin: 0 0 30px;
+
+
+        @include mobileBreakpoint("tablet"){
+            margin: 0 0 20px;
+        }
     }
 
     &__content{
